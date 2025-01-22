@@ -5,12 +5,12 @@ body {
 }
 
 /* Naviation */
-a {
+#main-nav a {
     text-decoration: none;
     color:lightcoral;
 }
 
-a:hover {
+#main-nav a:hover {
     background:black;
 }
 
@@ -35,7 +35,6 @@ h1 {
 
 h2 {
     color:lightskyblue;
-
 }
 
 p {
