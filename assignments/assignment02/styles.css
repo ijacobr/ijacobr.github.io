@@ -40,9 +40,9 @@ table {
     border: 3px solid rgb(207, 114, 167);
     border-collapse: collapse;
     margin: auto;
-    padding: 20px;
-    margin: 20px;
-    width: 50%;
+    padding: 10px;
+    margin: 0px;
+    width: 25%;
     background-color: aliceblue;
 }
 
