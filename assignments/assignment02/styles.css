@@ -1,21 +1,33 @@
 /* Structure */
 body {
-    background:rgb(83, 203, 191);
+    background: url(img/backgroundagt.webp);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #content {
-    background:rgb(255, 207, 208);
+    background:rgba(255, 207, 208, 0.9);
     padding: 20px;
     margin: auto;
     width: 80%;
     border: 3px solid rgb(207, 114, 167);
 }
 
+/* Images */
+.images {
+    border: 3px solid rgb(207, 114, 167);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 1px;
+}
+
+#background {
+    background:rgb(255, 207, 208);
+}
+
 /* Naviation */
 #main-nav a {
     text-decoration: none;
-    color:rgb(255, 207, 208);
+    color:rgb(66, 160, 151);
 }
 
 #main-nav a:hover {
@@ -25,9 +37,13 @@ body {
 /* Tables */
 table {
     color:rgb(66, 160, 151);
-    border: 3px solid rgb(255, 207, 208);
+    border: 3px solid rgb(207, 114, 167);
     border-collapse: collapse;
-    padding: 10px;
+    margin: auto;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    background-color: aliceblue;
 }
 
 /* Typography */

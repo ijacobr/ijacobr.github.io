@@ -4,6 +4,12 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+#content {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+}
+
 /* Naviation */
 #main-nav a {
     text-decoration: none;
@@ -15,12 +21,6 @@ body {
 }
 
 /* Tables */
-table {
-    width: 100%;
-    border: 1px solid white;
-    border-collapse: collapse;
-}
-
 th,
 td {
     border: 1px solid white;
@@ -35,6 +35,10 @@ h1 {
 
 h2 {
     color:lightskyblue;
+}
+
+.subheader {
+    font-style: italic;
 }
 
 p {
