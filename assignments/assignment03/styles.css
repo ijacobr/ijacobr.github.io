@@ -1,0 +1,154 @@
+/* General Body Styles */
+body {
+    background-color:blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    background-color:blanchedalmond;
+    text-align: center;
+    padding: 10px;
+}
+
+#main-header h1 {
+    color:blueviolet;
+}
+
+/* Navigation */
+#main-nav ul {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#main-nav li {
+    list-style-type: none;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: blanchedalmond;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* Content Sections */
+.main-content h2 {
+    color: blueviolet;
+    margin-left: 50px;
+}
+
+.main-content h3 {
+    margin-left: auto;
+}
+
+.top-bot-content, .mid-content {
+    padding: 10px;
+    margin: 0 50px;
+}
+
+.top-bot-content {
+    background-color: blueviolet;
+}
+
+.mid-content {
+    background-color:darkgreen;
+}
+
+.top-bot-content h3, .title-content h3, #title2-content h3 {
+    padding-left: 5px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.top-bot-section img, .mid-section img,
+.title-content img, .title2-content img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Flexible Sections */
+.title-content, .title2-content {
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.title-text {
+    padding: 5px;
+    margin: auto;
+}
+
+#flex-container {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+}
+
+.links-section {
+    background-color: blueviolet;
+    margin-left: 10px;
+}
+
+.links-section h3, .links-section a {
+    color: blanchedalmond;
+    margin-left: 10px;
+}
+
+.links-section li {
+    list-style-type: none;
+}
+
+/* Typography */
+.top-bot-text, .mid-text {
+    color: blanchedalmond;
+}
+
+.top-bot-text {
+    flex: 4;
+}
+
+.top-bot-img, .mid-img {
+    flex: 1;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: blueviolet;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Media Queries for Larger Resolutions */
+@media (min-width: 900px) {
+    #main-nav ul, .top-bot-section, .mid-section,
+    #flex-container, .title-content, .title2-content {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    .links-section {
+        flex: 2;
+        background-color: darkgreen;
+    }
+
+    #col1of4 {
+        flex: 3;
+    }
+
+    .top-bot-text, .mid-text, #title2-content {
+        flex: 4;
+    }
+
+}
