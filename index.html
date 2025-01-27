@@ -5,42 +5,38 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div id="content">
+        <div id="headers">
             <h1>CSCE 242 - Web Applications</h1>
-            <h2 class="subheader">Jacob Russell</h2>
-            <p>
-                This is the index page for my CSCE 242 class. Below are links to
-                my assignments. This course will teach us to utilize HTML and
-                CSS to design the front-end of a website. We will also use
-                JavaScript to add functionality to our website. Lastly, we will
-                learn to utilize nodes and server side JavaScript to store and
-                retrieve data from a server.
-            </p>
-            <h2 class="subheader">Assignments</h2>
-            <nav id="main-nav">
-                <ul>
-                    <li>
-                        <a href="assignments/assignment01/index.html"
-                            >Assignment 01</a
-                        >
-                    </li>
-                    <li>
-                        <a href="assignments/assignment02/index.html"
-                            >Assignment 02</a
-                        >
-                    </li>
-                    <li>
-                        <a href="assignments/assignment03/index.html"
-                            >Assignment 03</a
-                        >
-                    </li>
-                    <li>
-                        <a href="assignments/assignment04/index.html"
-                            >Assignment 04</a
-                        >
-                    </li>
-                </ul>
-            </nav>
+            <h2 id="name">Jacob Russell</h2>
+            <h2 id="assign">Assignments</h2>
         </div>
+
+        <main id="main">
+            <div id="a01-03">
+                <section id="a01">
+                    <h3>Assignment01 - Basic HTML</h3>
+                    <img src="img/a01.PNG" alt="Assignment01" />
+                    <p>
+                        Our first assignemnt where we used html and css to
+                        create a simple webpage. We also included a few pictures
+                        and lists with links.
+                    </p>
+                </section>
+                <section id="a02">
+                    <h3>Assignment02 - Basic CSS</h3>
+                    <img src="img/a02.PNG" alt="Assignment02" />
+                    <p>
+                        Our second assignment where we created a basic
+                        navigation and table alongside our css and pictures.
+                    </p>
+                </section>
+                <section id="a03">
+                    <h3>Assignment03 - Page Layout</h3>
+                    <img src="img/a03.PNG" alt="Assignment03" />
+                    <p>
+                        Our third assignment where we used flexbox to adjust our webpage to different resolutions.
+                    </p>
+            </div>
+        </main>
     </body>
 </html>
