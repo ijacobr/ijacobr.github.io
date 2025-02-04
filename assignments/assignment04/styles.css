@@ -50,7 +50,7 @@ body {
 }
 
 #upper-body-pic {
-    width: 100%;
+    width: 50%;
 }
 
 #upper-body-text {
@@ -111,28 +111,39 @@ body {
     scale: 0.67;
 }
 
-#bottom-header,
-#bottom-header a {
+.bottom-header {
+    display: flex;
+}
+
+.bottom-header,
+.bottom-header a {
     background-color: gray;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    justify-content: space-between;
-    align-items: center;
-    display:flex;
+    justify-content:center;
+    padding: 10px;
+}
+
+.bottom-header h3 {
+    padding-right: 100px;
 }
 
 .bottom-link {
-    text-align: right;
-    float: right;
+    justify-content: flex-end;
     padding: 5px;
+    margin-top: 12px;
 }
-
 
 #footer {
     color: white;
-    scale: .67;
+    scale: 0.67;
     text-align: left;
+}
+
+
+#lowest-div {
+    background-color: #73000a;
 }
 
 /* Resolutions */
@@ -143,4 +154,5 @@ body {
         display: inline;
         text-align: right;
     }
+
 }
