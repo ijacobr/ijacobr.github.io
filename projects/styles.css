@@ -20,18 +20,10 @@ body {
     text-align: center;
 }
 
-#a04-06 {
-    display: block;
-    padding: 20px;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-}
-
 #a01,
 #a02,
 #a03,
-#a04 {
+#a04, {
     background-color: cadetblue;
 }
 
