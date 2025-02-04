@@ -46,24 +46,93 @@ body {
     background-color: white;
     padding: 10px;
     position: relative;
+    display: block;
 }
 
-#cf {
+#upper-body-pic {
     width: 100%;
 }
 
-#crossfit {
+#upper-body-text {
     background-color: white;
     position: absolute;
     text-align: left;
     scale: 0.67;
     border-left-style: solid;
     border-color: #73000a;
-    
+    bottom: 0;
+    margin-bottom: 5px;
 }
 
-#crossfit h3 {
+#upper-body-text h3 {
     color: #73000a;
+}
+
+.middle {
+    background-color: white;
+    display: flex;
+}
+
+.middle a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    border-color: black;
+}
+
+.middle li {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+#MyArts {
+    scale: 0.67;
+    float: right;
+    margin-top: -15px;
+}
+
+#middle-right-header {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#middle-pics {
+    display: block;
+    margin: 5px;
+}
+
+#middle-pics h3 {
+    color: #73000a;
+    scale: 0.67;
+}
+
+#middle-pics p {
+    scale: 0.67;
+}
+
+#bottom-header,
+#bottom-header a {
+    background-color: gray;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+
+.bottom-link {
+    text-align: right;
+    float: right;
+    padding: 5px;
+}
+
+
+#footer {
+    color: white;
+    scale: .67;
+    text-align: left;
 }
 
 /* Resolutions */
