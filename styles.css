@@ -58,7 +58,7 @@ h2 {
         padding: 10px;
     }
     #a04-06 {
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
         padding: 10px;
