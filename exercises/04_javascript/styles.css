@@ -1,0 +1,241 @@
+/* Structure */
+:root {
+    --main-background-color: #cdecef;
+    --primary-color: #2b91ad;
+    --gallery-color: #ffb58a;
+}
+
+body {
+    background: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background: white;
+    width: 70%;
+    margin: auto; /* center */
+    border-radius: 5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header {
+    /*
+    position: fixed;
+    width: 70%;
+    */
+}
+
+header,
+footer {
+    background: var(--primary-color);
+    color: white;
+    position: relative;
+    padding: 20px 0;
+}
+
+main {
+    padding: 5px;
+}
+
+.idea {
+    padding: 5px;
+}
+
+.idea:nth-child(even) {
+    background: var(--main-background-color);
+}
+
+.idea-img {
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.idea-img p {
+    padding: 5px;
+    background: #2b91ad;
+    color: white;
+}
+
+.gallery {
+    background: var(--gallery-color);
+}
+
+.links {
+    background: #d3ddea;
+}
+
+.tile,
+.node {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Buttons */
+.sad {
+    color:purple;
+}
+
+.good-times {
+    color:pink;
+}
+
+.bad-times {
+    color:blue;
+}
+
+.clear {
+    display:none;
+}
+
+/* Animations */
+#animation-fun {
+    background: #2b91ad;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+}
+
+#ball {
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+    animation-name: fun;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fun {
+    0% {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+        left: 100px;
+        top: 200px;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: purple;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/* Playing with positioning */
+#main-logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Navigation */
+#sub-nav {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+#main-nav ul,
+#sub-nav ul {
+    padding-left: 0;
+}
+
+#main-nav li,
+#sub-nav li {
+    list-style-type: none; /* remove the bullets */
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#main-nav li {
+    background: var(--gallery-color);
+}
+
+#sub-nav li {
+    margin: 0 10px;
+}
+
+#main-nav a,
+#sub-nav a {
+    color: white;
+    text-decoration: none; /* remove the underlines */
+    border-bottom: 1px solid transparent;
+}
+
+#main-nav a:hover,
+#sub-nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+#main-nav a:hover {
+    color: crimson;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Larger screens */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #main-nav li:not(:last-child) {
+        border-right: 1px solid white;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .tile {
+        flex-basis: 45%;
+    }
+
+    .node {
+        flex-basis: 30%;
+    }
+
+    .idea-img p {
+        position: absolute;
+        bottom: 0;
+    }
+}
