@@ -1,0 +1,38 @@
+#name,#amount {
+    text-align: center;
+}
+
+#dropdown {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#dropdown-list {
+    padding: 5px;
+    width:150px;
+}
+
+@media (min-width: 650px) {
+    #name,#amount {
+        display: flex;
+    }
+    #name1, #name2, #name3,#a1,#a2,#a3 {
+        flex:1;
+    }
+
+    #row1 {
+        display: flex;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+        flex:1;
+        margin: 10px;
+    }
+
+    #row2 {
+        display: flex;
+    }
+    #pic6, #pic7, #pic8, #pic9, #pic10 {
+        flex:1;
+        margin: 10px;
+    }
+}

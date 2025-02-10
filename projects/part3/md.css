@@ -1,0 +1,29 @@
+#dropdown {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+#dropdown-list {
+    padding: 5px;
+    width:150px;
+}
+
+@media (min-width: 650px) {
+    #deck-cards {
+        margin-top: 20px;
+    }
+    #row1 {
+        display: flex;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+        flex:1;
+        margin: 10px;
+    }
+    #row2 {
+        display: flex;
+    }
+    #pic6, #pic7, #pic8, #pic9, #pic10 {
+        flex:1;
+        margin: 10px;
+    }
+}
