@@ -12,14 +12,14 @@ body {
     text-align: center;
 }
 
-#a01-03 {
+#a01-03,
+#a04-a06 {
     display: block;
     padding: 20px;
     margin: auto;
     width: 80%;
     text-align: center;
 }
-
 #a01,
 #a02,
 #a03,
@@ -44,19 +44,16 @@ h2 {
 }
 
 @media (min-width: 900px) {
-    #main {
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
     #a01-03 {
         display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+        padding: 10px;
     }
     #a04-06 {
         display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+        padding: 10px;
     }
 }
