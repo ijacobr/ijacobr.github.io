@@ -9,6 +9,6 @@ window.onload = function () {
         });
 
     document.getElementById("img").addEventListener("click", function() {
-        this.src = "https://picsum.photos/150?random="+ new Date().getTime();;
+        this.src = "https://picsum.photos/150?random="+ new Date().getTime();
     });
 };

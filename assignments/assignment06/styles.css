@@ -1,0 +1,81 @@
+body {
+    background-color: blanchedalmond;
+}
+.hidden {
+    display: none;
+}
+#header {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+#traveling,
+#picture {
+    display: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#transportInput {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#transportationImage {
+    display: none;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heart {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+.heart-buttons {
+    text-align: center;
+}
+
+.heart-button {
+    cursor: pointer;
+}
+
+@media (min-width: 400px) {
+    #e2::before {
+        content: "|";
+        margin: 10px;
+    }
+    .menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+    }
+    .arrow-button {
+        display: none;
+    }
+}
