@@ -13,9 +13,8 @@ body {
 }
 
 #a01-03,
-#a04-a06 {
+#a04-06 {
     display: block;
-    padding: 20px;
     margin: auto;
     width: 80%;
     text-align: center;

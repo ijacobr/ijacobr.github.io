@@ -12,7 +12,8 @@ body {
     text-align: center;
 }
 
-#a01-03 {
+#a01-03,
+#a04-06 {
     display: block;
     margin: auto;
     width: 80%;
