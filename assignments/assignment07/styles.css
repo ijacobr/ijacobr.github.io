@@ -1,0 +1,73 @@
+body {
+    background-color: blanchedalmond;
+    color: cadetblue;
+}
+
+#header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+#container {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#top-section,
+#bottom-section {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#btn-climb {
+    display: none;
+    margin: 0 auto;
+}
+
+#stairsContainer {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#stairs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ladder-post {
+    position: absolute;
+    width: 10px;
+    background-color: black;
+    height: 100%;
+}
+
+.left-post {
+    left: 0;
+}
+
+.right-post {
+    right: 0;
+}
+
+.rung {
+    position: absolute;
+    height: 5px;
+    background-color: black;
+    left: 10px;
+}
+
+#stickFigure {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    display: none;
+}
