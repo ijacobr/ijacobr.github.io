@@ -1,0 +1,210 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: #463C2D;
+    font-family: 'Roboto', sans-serif;
+    color: #26AEE7;
+    text-align: center;
+  }
+  
+  /* Global hyperlink style */
+  a {
+    color: #FFD700; /* Brighter, more visible color */
+    text-decoration: none;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #2C2A27;
+    padding: 10px;
+  }
+  #top-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #main-img {
+    max-width: 150px;
+    height: auto;
+  }
+  #main-header {
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #main-btn {
+    padding: 10px;
+    margin: 10px;
+  }
+  /* Hamburger menu (hidden on wider screens) */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  #main-nav {
+    margin-top: 10px;
+  }
+  #main-nav a {
+    text-decoration: none;
+    color: #FFD700;
+    padding: 10px 15px;
+  }
+  
+  /* Main sections */
+  main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Hero Section */
+  #hero {
+    margin: 20px 0;
+  }
+  
+  /* Features Section */
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .feature {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #26AEE7;
+    border-radius: 5px;
+  }
+  
+  /* Blog Updates */
+  #blog-updates {
+    padding: 20px;
+  }
+  
+  /* Form styles for My Decks page */
+  #deck-form {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+  }
+  #deck-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  #deck-form input, 
+  #deck-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  #deck-form button {
+    padding: 10px 15px;
+  }
+  
+  /* Remove bullet points from the Your Decks list */
+  #deck-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  /* Grid layout for card galleries */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  .card-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+  .add-to-deck {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    cursor: pointer;
+  }
+  
+  /* Sorting button styles */
+  #card-sort {
+    margin: 20px 0;
+  }
+  .sort-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .sort-button:hover {
+    background-color: #FFD700;
+    color: #463C2D;
+  }
+  .sort-button.active {
+    background-color: #FFD700;
+    color: #463C2D;
+  }
+  
+  /* Deck Analysis Metrics */
+  #analysis-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .metric {
+    flex: 1 1 150px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* About Us page */
+  #content-text {
+    border: 1px solid #26AEE7;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  /* Preview page styles */
+  #card-preview {
+    padding: 20px;
+  }
+  #card-preview img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Responsive Navigation and Mobile adjustments */
+  @media (max-width: 768px) {
+    #main-nav {
+      display: none;
+      flex-direction: column;
+    }
+    .hamburger {
+      display: block;
+    }
+    header {
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

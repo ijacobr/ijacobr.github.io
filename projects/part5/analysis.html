@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deck Analysis - CreateMyDeck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-main">
+        <img
+          id="main-img"
+          src="/projects/images/logo.PNG"
+          alt="CreateMyDeck Logo"
+        />
+        <h1 id="main-header">CreateMyDeck</h1>
+        <button id="main-btn">Log In</button>
+        <div id="hamburger" class="hamburger">&#9776;</div>
+      </div>
+      <nav id="main-nav">
+        <a href="home.html">Home</a>
+        <a href="mydecks.html">My Decks</a>
+        <a href="browse.html">Browse Cards</a>
+        <a href="analysis.html">Deck Analysis</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Deck Analysis</h2>
+      <p>
+        Choose a deck to see its average cost, attack, and health, along with a
+        brief description of its playstyle.
+      </p>
+
+      <!-- Deck selection dropdown -->
+      <section>
+        <label for="analysisDeckSelect">Analyze which deck?</label>
+        <select id="analysisDeckSelect">
+          <option value="">-- Select a deck --</option>
+          <!-- Populated by script.js from localStorage -->
+        </select>
+        <button id="analyzeDeckBtn">Analyze Deck</button>
+      </section>
+
+      <section id="analysis-deck-list">
+        <!-- We'll list the selected deck's cards here dynamically -->
+      </section>
+
+      <section id="analysis-metrics">
+        <div class="metric">
+          <h3>Average Cost</h3>
+          <p id="avg-cost"></p>
+        </div>
+        <div class="metric">
+          <h3>Average Attack</h3>
+          <p id="avg-attack"></p>
+        </div>
+        <div class="metric">
+          <h3>Average Health</h3>
+          <p id="avg-defense"></p>
+        </div>
+      </section>
+
+      <section id="analysis-description">
+        <p id="deck-description"></p>
+      </section>
+    </main>
+  </body>
+</html>

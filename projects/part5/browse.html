@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browse Cards - CreateMyDeck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-main">
+        <img
+          id="main-img"
+          src="/projects/images/logo.PNG"
+          alt="CreateMyDeck Logo"
+        />
+        <h1 id="main-header">CreateMyDeck</h1>
+        <button id="main-btn">Log In</button>
+        <div id="hamburger" class="hamburger">&#9776;</div>
+      </div>
+      <nav id="main-nav">
+        <a href="home.html">Home</a>
+        <a href="mydecks.html">My Decks</a>
+        <a href="browse.html">Browse Cards</a>
+        <a href="analysis.html">Deck Analysis</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Browse Cards</h2>
+      <p>
+        Select a deck to add cards to, or simply view the collection. Click any
+        of the sort buttons below to view cards from highest to lowest by cost,
+        attack, or defense. Then click "Add" to place a card into your chosen
+        deck.
+      </p>
+
+      <!-- Deck selection dropdown -->
+      <section id="deck-dropdown">
+        <label for="deckSelect">Add cards to:</label>
+        <select id="deckSelect">
+          <option value="">-- Select a deck --</option>
+          <!-- Populated by script.js from localStorage -->
+        </select>
+      </section>
+
+      <!-- Sorting Section -->
+      <section id="card-sort">
+        <button class="sort-button" data-sort="cost">Sort by Cost</button>
+        <button class="sort-button" data-sort="attack">Sort by Attack</button>
+        <button class="sort-button" data-sort="defense">Sort by Defense</button>
+      </section>
+
+      <!-- Card Gallery (grid layout) -->
+      <section id="card-gallery" class="grid">
+        <!-- Example of a card with data attributes -->
+        <!-- Aldor Peacekeeper -->
+        <div
+          class="card-item"
+          data-name="Aldor Peacekeeper"
+          data-cost="3"
+          data-attack="3"
+          data-defense="3"
+        >
+          <a href="preview.html?card=aldorpeacekeeper">
+            <img
+              src="/projects/images/cards/aldorpeacekeeper.png"
+              alt="Aldor Peacekeeper"
+            />
+          </a>
+          <p>Aldor Peacekeeper</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Alexstrasza -->
+        <div
+          class="card-item"
+          data-name="Alexstrasza"
+          data-cost="9"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=alexstrasza">
+            <img
+              src="/projects/images/cards/alexstrasza.png"
+              alt="Alexstrasza"
+            />
+          </a>
+          <p>Alexstrasza</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Ancient Brewmaster -->
+        <div
+          class="card-item"
+          data-name="Ancient Brewmaster"
+          data-cost="4"
+          data-attack="5"
+          data-defense="4"
+        >
+          <a href="preview.html?card=ancientbrewmaster">
+            <img
+              src="/projects/images/cards/ancientbrewmaster.png"
+              alt="Ancient Brewmaster"
+            />
+          </a>
+          <p>Ancient Brewmaster</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Argent Protector -->
+        <div
+          class="card-item"
+          data-name="Argent Protector"
+          data-cost="2"
+          data-attack="2"
+          data-defense="2"
+        >
+          <a href="preview.html?card=argentprotector">
+            <img
+              src="/projects/images/cards/argentprotector.png"
+              alt="Argent Protector"
+            />
+          </a>
+          <p>Argent Protector</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Baron Geddon -->
+        <div
+          class="card-item"
+          data-name="Baron Geddon"
+          data-cost="7"
+          data-attack="7"
+          data-defense="5"
+        >
+          <a href="preview.html?card=barongeddon">
+            <img
+              src="/projects/images/cards/barongeddon.png"
+              alt="Baron Geddon"
+            />
+          </a>
+          <p>Baron Geddon</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Boulderfist Ogre -->
+        <div
+          class="card-item"
+          data-name="Boulderfist Ogre"
+          data-cost="6"
+          data-attack="6"
+          data-defense="7"
+        >
+          <a href="preview.html?card=boulderfistogre">
+            <img
+              src="/projects/images/cards/boulderfistogre.png"
+              alt="Boulderfist Ogre"
+            />
+          </a>
+          <p>Boulderfist Ogre</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Booty Bay Bodyguard -->
+        <div
+          class="card-item"
+          data-name="Booty Bay Bodyguard"
+          data-cost="5"
+          data-attack="5"
+          data-defense="4"
+        >
+          <a href="preview.html?card=bootybaybodyguard">
+            <img
+              src="/projects/images/cards/bootybaybodyguard.png"
+              alt="Booty Bay Bodyguard"
+            />
+          </a>
+          <p>Booty Bay Bodyguard</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Captain Greenskin -->
+        <div
+          class="card-item"
+          data-name="Captain Greenskin"
+          data-cost="5"
+          data-attack="5"
+          data-defense="4"
+        >
+          <a href="preview.html?card=captaingreenskin">
+            <img
+              src="/projects/images/cards/captaingreenskin.png"
+              alt="Captain Greenskin"
+            />
+          </a>
+          <p>Captain Greenskin</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Core Hound -->
+        <div
+          class="card-item"
+          data-name="Core Hound"
+          data-cost="7"
+          data-attack="9"
+          data-defense="5"
+        >
+          <a href="preview.html?card=corehound">
+            <img
+              src="/projects/images/cards/corehound.png"
+              alt="Core Hound"
+            />
+          </a>
+          <p>Core Hound</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Deathwing -->
+        <div
+          class="card-item"
+          data-name="Deathwing"
+          data-cost="10"
+          data-attack="12"
+          data-defense="12"
+        >
+          <a href="preview.html?card=deathwing">
+            <img
+              src="/projects/images/cards/deathwing.png"
+              alt="Deathwing"
+            />
+          </a>
+          <p>Deathwing</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Elite Tauren Chieftain -->
+        <div
+          class="card-item"
+          data-name="Elite Tauren Chieftain"
+          data-cost="5"
+          data-attack="5"
+          data-defense="5"
+        >
+          <a href="preview.html?card=elitetaurenchieftain">
+            <img
+              src="/projects/images/cards/elitetaurenchieftain.png"
+              alt="Elite Tauren Chieftain"
+            />
+          </a>
+          <p>Elite Tauren Chieftain</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Frost Elemental -->
+        <div
+          class="card-item"
+          data-name="Frost Elemental"
+          data-cost="6"
+          data-attack="5"
+          data-defense="5"
+        >
+          <a href="preview.html?card=frostelemental">
+            <img
+              src="/projects/images/cards/frostelemental.png"
+              alt="Frost Elemental"
+            />
+          </a>
+          <p>Frost Elemental</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Gelbin Mekkatorque -->
+        <div
+          class="card-item"
+          data-name="Gelbin Mekkatorque"
+          data-cost="6"
+          data-attack="6"
+          data-defense="6"
+        >
+          <a href="preview.html?card=gelbinmekkatorque">
+            <img
+              src="/projects/images/cards/gelbinmekkatorque.png"
+              alt="Gelbin Mekkatorque"
+            />
+          </a>
+          <p>Gelbin Mekkatorque</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Gruul -->
+        <div
+          class="card-item"
+          data-name="Gruul"
+          data-cost="8"
+          data-attack="7"
+          data-defense="7"
+        >
+          <a href="preview.html?card=gruul">
+            <img
+              src="/projects/images/cards/gruul.png"
+              alt="Gruul"
+            />
+          </a>
+          <p>Gruul</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Guardian of Kings -->
+        <div
+          class="card-item"
+          data-name="Guardian of Kings"
+          data-cost="7"
+          data-attack="5"
+          data-defense="6"
+        >
+          <a href="preview.html?card=guardianofkings">
+            <img
+              src="/projects/images/cards/guardianofkings.png"
+              alt="Guardian of Kings"
+            />
+          </a>
+          <p>Guardian of Kings</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Illidan Stormrage -->
+        <div
+          class="card-item"
+          data-name="Illidan Stormrage"
+          data-cost="6"
+          data-attack="7"
+          data-defense="5"
+        >
+          <a href="preview.html?card=illidanstormrage">
+            <img
+              src="/projects/images/cards/illidanstormrage.png"
+              alt="Illidan Stormrage"
+            />
+          </a>
+          <p>Illidan Stormrage</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Leeroy Jenkins -->
+        <div
+          class="card-item"
+          data-name="Leeroy Jenkins"
+          data-cost="4"
+          data-attack="6"
+          data-defense="2"
+        >
+          <a href="preview.html?card=leeroyjenkins">
+            <img
+              src="/projects/images/cards/leeroyjenkins.png"
+              alt="Leeroy Jenkins"
+            />
+          </a>
+          <p>Leeroy Jenkins</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Lord of the Arena -->
+        <div
+          class="card-item"
+          data-name="Lord of the Arena"
+          data-cost="6"
+          data-attack="6"
+          data-defense="5"
+        >
+          <a href="preview.html?card=lordofthearena">
+            <img
+              src="/projects/images/cards/lordofthearena.png"
+              alt="Lord of the Arena"
+            />
+          </a>
+          <p>Lord of the Arena</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Molten Giant -->
+        <div
+          class="card-item"
+          data-name="Molten Giant"
+          data-cost="20"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=moltengiant">
+            <img
+              src="/projects/images/cards/moltengiant.png"
+              alt="Molten Giant"
+            />
+          </a>
+          <p>Molten Giant</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Mountain Giant -->
+        <div
+          class="card-item"
+          data-name="Mountain Giant"
+          data-cost="12"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=mountaingiant">
+            <img
+              src="/projects/images/cards/mountaingiant.png"
+              alt="Mountain Giant"
+            />
+          </a>
+          <p>Mountain Giant</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Nozdormu -->
+        <div
+          class="card-item"
+          data-name="Nozdormu"
+          data-cost="9"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=nozdormu">
+            <img
+              src="/projects/images/cards/nozdormu.png"
+              alt="Nozdormu"
+            />
+          </a>
+          <p>Nozdormu</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Onyxia -->
+        <div
+          class="card-item"
+          data-name="Onyxia"
+          data-cost="9"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=onyxia">
+            <img
+              src="/projects/images/cards/onyxia.png"
+              alt="Onyxia"
+            />
+          </a>
+          <p>Onyxia</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Ragnaros the Firelord -->
+        <div
+          class="card-item"
+          data-name="Ragnaros the Firelord"
+          data-cost="8"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=ragnarosthefirelord">
+            <img
+              src="/projects/images/cards/ragnarosthefirelord.png"
+              alt="Ragnaros the Firelord"
+            />
+          </a>
+          <p>Ragnaros the Firelord</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Ravenholdt Assassin -->
+        <div
+          class="card-item"
+          data-name="Ravenholdt Assassin"
+          data-cost="7"
+          data-attack="7"
+          data-defense="5"
+        >
+          <a href="preview.html?card=ravenholtassassin">
+            <img
+              src="/projects/images/cards/ravenholtassassin.png"
+              alt="Ravenholdt Assassin"
+            />
+          </a>
+          <p>Ravenholdt Assassin</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Sea Giant -->
+        <div
+          class="card-item"
+          data-name="Sea Giant"
+          data-cost="10"
+          data-attack="8"
+          data-defense="8"
+        >
+          <a href="preview.html?card=seagiant">
+            <img
+              src="/projects/images/cards/seagiant.png"
+              alt="Sea Giant"
+            />
+          </a>
+          <p>Sea Giant</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Stormwind Champion -->
+        <div
+          class="card-item"
+          data-name="Stormwind Champion"
+          data-cost="7"
+          data-attack="6"
+          data-defense="6"
+        >
+          <a href="preview.html?card=stormwindchampion">
+            <img
+              src="/projects/images/cards/stormwindchampion.png"
+              alt="Stormwind Champion"
+            />
+          </a>
+          <p>Stormwind Champion</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- The Beast -->
+        <div
+          class="card-item"
+          data-name="The Beast"
+          data-cost="6"
+          data-attack="9"
+          data-defense="7"
+        >
+          <a href="preview.html?card=thebeast">
+            <img
+              src="/projects/images/cards/thebeast.png"
+              alt="The Beast"
+            />
+          </a>
+          <p>The Beast</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Tirion Fordring -->
+        <div
+          class="card-item"
+          data-name="Tirion Fordring"
+          data-cost="8"
+          data-attack="6"
+          data-defense="6"
+        >
+          <a href="preview.html?card=tirionfordring">
+            <img
+              src="/projects/images/cards/tirionfordring.png"
+              alt="Tirion Fordring"
+            />
+          </a>
+          <p>Tirion Fordring</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- Venture Co. Mercenary -->
+        <div
+          class="card-item"
+          data-name="Venture Co. Mercenary"
+          data-cost="5"
+          data-attack="7"
+          data-defense="6"
+        >
+          <a href="preview.html?card=venturecomercenary">
+            <img
+              src="/projects/images/cards/venturecomercenary.png"
+              alt="Venture Co. Mercenary"
+            />
+          </a>
+          <p>Venture Co. Mercenary</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+
+        <!-- War Golem -->
+        <div
+          class="card-item"
+          data-name="War Golem"
+          data-cost="7"
+          data-attack="7"
+          data-defense="7"
+        >
+          <a href="preview.html?card=wargolem">
+            <img
+              src="/projects/images/cards/wargolem.png"
+              alt="War Golem"
+            />
+          </a>
+          <p>War Golem</p>
+          <button class="add-to-deck">Add</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Preview - CreateMyDeck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="top-main">
+        <img
+          id="main-img"
+          src="/projects/images/logo.PNG"
+          alt="CreateMyDeck Logo"
+        />
+        <h1 id="main-header">CreateMyDeck</h1>
+        <button id="main-btn">Log In</button>
+        <div id="hamburger" class="hamburger">&#9776;</div>
+      </div>
+      <nav id="main-nav">
+        <a href="home.html">Home</a>
+        <a href="mydecks.html">My Decks</a>
+        <a href="browse.html">Browse Cards</a>
+        <a href="analysis.html">Deck Analysis</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Card Preview</h2>
+      <div id="card-preview">
+        <img
+          id="card-image"
+          src="/projects/images/cards/aldorpeacekeeper.png"
+          alt="Card Preview"
+        />
+        <div id="card-details">
+          <h3 id="card-name">Card Name</h3>
+          <p id="card-description">Card ability goes here.</p>
+        </div>
+      </div>
+      <a href="browse.html" class="back-link">Back to Browse</a>
+    </main>
+
+    <script>
+      // A lookup table of card data (name + ability text).
+      // Add or adjust any entries as needed.
+      const cardData = {
+        aldorpeacekeeper: {
+          name: "Aldor Peacekeeper",
+          description: "Battlecry: Change an enemy minion's Attack to 1."
+        },
+        alexstrasza: {
+          name: "Alexstrasza",
+          description: "Battlecry: Set a hero's remaining Health to 15."
+        },
+        ancientbrewmaster: {
+          name: "Ancient Brewmaster",
+          description: "Battlecry: Return a friendly minion to your hand."
+        },
+        argentprotector: {
+          name: "Argent Protector",
+          description: "Battlecry: Give a friendly minion Divine Shield."
+        },
+        barongeddon: {
+          name: "Baron Geddon",
+          description: "At the end of your turn, deal 2 damage to all other characters."
+        },
+        boulderfistogre: {
+          name: "Boulderfist Ogre",
+          description: "No special ability (vanilla)."
+        },
+        bootybaybodyguard: {
+          name: "Booty Bay Bodyguard",
+          description: "Taunt."
+        },
+        captaingreenskin: {
+          name: "Captain Greenskin",
+          description: "Battlecry: Give your weapon +1/+1."
+        },
+        corehound: {
+          name: "Core Hound",
+          description: "No special ability (vanilla)."
+        },
+        deathwing: {
+          name: "Deathwing",
+          description: "Battlecry: Destroy all other minions and discard your hand."
+        },
+        elitetaurenchieftain: {
+          name: "Elite Tauren Chieftain",
+          description: "Battlecry: Give both players the power to rock!"
+        },
+        frostelemental: {
+          name: "Frost Elemental",
+          description: "Battlecry: Freeze a character."
+        },
+        gelbinmekkatorque: {
+          name: "Gelbin Mekkatorque",
+          description: "Battlecry: Summon a random invention."
+        },
+        gruul: {
+          name: "Gruul",
+          description: "At the end of each turn, gain +1/+1."
+        },
+        guardianofkings: {
+          name: "Guardian of Kings",
+          description: "Battlecry: Restore 6 Health to your hero."
+        },
+        illidanstormrage: {
+          name: "Illidan Stormrage",
+          description: "Whenever you play a card, summon a 2/1 Flame of Azzinoth."
+        },
+        leeroyjenkins: {
+          name: "Leeroy Jenkins",
+          description: "Charge. Battlecry: Summon two 1/1 Whelps for your opponent."
+        },
+        lordofthearena: {
+          name: "Lord of the Arena",
+          description: "Taunt."
+        },
+        moltengiant: {
+          name: "Molten Giant",
+          description: "Costs (1) less for each damage your hero has taken."
+        },
+        mountaingiant: {
+          name: "Mountain Giant",
+          description: "Costs (1) less for each other card in your hand."
+        },
+        nozdormu: {
+          name: "Nozdormu",
+          description: "Players only have 15 seconds to take their turns."
+        },
+        onyxia: {
+          name: "Onyxia",
+          description: "Battlecry: Summon 1/1 Whelps until your board is full."
+        },
+        ragnarosthefirelord: {
+          name: "Ragnaros the Firelord",
+          description: "Can't attack. At the end of your turn, deal 8 damage to a random enemy."
+        },
+        ravenholtassassin: {
+          name: "Ravenholdt Assassin",
+          description: "Stealth."
+        },
+        seagiant: {
+          name: "Sea Giant",
+          description: "Costs (1) less for each other minion on the battlefield."
+        },
+        stormwindchampion: {
+          name: "Stormwind Champion",
+          description: "Your other minions have +1/+1."
+        },
+        thebeast: {
+          name: "The Beast",
+          description: "Deathrattle: Summon a 3/3 Finkle Einhorn for your opponent."
+        },
+        tirionfordring: {
+          name: "Tirion Fordring",
+          description: "Divine Shield, Taunt. Deathrattle: Equip a 5/3 Ashbringer."
+        },
+        venturecomercenary: {
+          name: "Venture Co. Mercenary",
+          description: "Your minions cost (3) more."
+        },
+        wargolem: {
+          name: "War Golem",
+          description: "No special ability (vanilla)."
+        }
+      };
+
+      // Grab the card ID from the query param
+      const params = new URLSearchParams(window.location.search);
+      const cardKey = params.get("card");
+
+      // Populate the preview fields
+      const cardImage = document.getElementById("card-image");
+      const cardName = document.getElementById("card-name");
+      const cardDesc = document.getElementById("card-description");
+
+      if (cardKey && cardData[cardKey]) {
+        cardName.textContent = cardData[cardKey].name;
+        cardDesc.textContent = cardData[cardKey].description;
+        cardImage.src = `/projects/images/cards/${cardKey}.png`;
+      } else {
+        cardName.textContent = "Unknown Card";
+        cardDesc.textContent = "No description available.";
+      }
+    </script>
+  </body>
+</html>

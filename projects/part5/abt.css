@@ -1,0 +1,9 @@
+#header {
+    text-align: center;
+}
+
+#content-text {
+    border: 1px black solid;
+    margin: 50px;
+    padding: 20px;
+}
