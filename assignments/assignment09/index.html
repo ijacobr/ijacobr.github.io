@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pizza Menu</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+    </head>
+    <body>
+        <div id="header">
+            <h1>Pizza Menu</h1>
+        </div>
+
+        <div id="pizza-container" class="pizza-grid"></div>
+
+        <div id="pizzaModal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+                <div class="w3-container">
+                    <span
+                        class="w3-button w3-display-topright"
+                        onclick="closeModal()"
+                        >&times;</span
+                    >
+                    <h2 id="modalTitle"></h2>
+                    <img id="modalImage" class="modal-img" src="" alt="" />
+                    <p>
+                        <strong>Ingredients:</strong>
+                        <span id="modalIngredients"></span>
+                    </p>
+                    <p><strong>Sauce:</strong> <span id="modalSauce"></span></p>
+                    <p>
+                        <strong>Cheese:</strong> <span id="modalCheese"></span>
+                    </p>
+                    <p>
+                        <strong>Price:</strong> $<span id="modalPrice"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Jacob Russell</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
