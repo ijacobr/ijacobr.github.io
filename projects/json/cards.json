@@ -1,0 +1,272 @@
+[
+  {
+    "id": "1",
+    "img": "projects/images/cards/aldorpeacekeeper.png",
+    "name": "Aldor Peacekeeper",
+    "cost": "3",
+    "attack": "3",
+    "health": "3",
+    "text": "Battlecry: Change an enemy minion's Attack to 1."
+  },
+  {
+    "id": "2",
+    "img": "projects/images/cards/alexstrasza.png",
+    "name": "Alexstrasza",
+    "cost": "9",
+    "attack": "8",
+    "health": "8",
+    "text": "Battlecry: Set a hero's remaining Health to 15."
+  },
+  {
+    "id": "3",
+    "img": "projects/images/cards/ancientbrewmaster.png",
+    "name": "Ancient Brewmaster",
+    "cost": "4",
+    "attack": "5",
+    "health": "4",
+    "text": "Battlecry: Return a friendly minion from the battlefield to your hand."
+  },
+  {
+    "id": "4",
+    "img": "projects/images/cards/argentprotector.png",
+    "name": "Argent Protector",
+    "cost": "2",
+    "attack": "2",
+    "health": "2",
+    "text": "Battlecry: Give a friendly minion Divine Shield."
+  },
+  {
+    "id": "5",
+    "img": "projects/images/cards/barongeddon.png",
+    "name": "Baron Geddon",
+    "cost": "7",
+    "attack": "7",
+    "health": "5",
+    "text": "At the end of your turn, deal 2 damage to ALL other characters."
+  },
+  {
+    "id": "6",
+    "img": "projects/images/cards/boulderfistogre.png",
+    "name": "Boulderfist Ogre",
+    "cost": "6",
+    "attack": "6",
+    "health": "7",
+    "text": "This card has no special ability."
+  },
+  {
+    "id": "7",
+    "img": "projects/images/cards/bootybaybodyguard.png",
+    "name": "Booty Bay Bodyguard",
+    "cost": "5",
+    "attack": "5",
+    "health": "4",
+    "text": "Taunt"
+  },
+  {
+    "id": "8",
+    "img": "projects/images/cards/captaingreenskin.png",
+    "name": "Captain Greenskin",
+    "cost": "5",
+    "attack": "5",
+    "health": "4",
+    "text": "Battlecry: Give your weapon +1/+1."
+  },
+  {
+    "id": "9",
+    "img": "projects/images/cards/corehound.png",
+    "name": "Core Hound",
+    "cost": "7",
+    "attack": "9",
+    "health": "5",
+    "text": "This card has no special ability."
+  },
+  {
+    "id": "10",
+    "img": "projects/images/cards/deathwing.png",
+    "name": "Deathwing",
+    "cost": "10",
+    "attack": "12",
+    "health": "12",
+    "text": "Battlecry: Destroy all other minions and discard your hand."
+  },
+  {
+    "id": "11",
+    "img": "projects/images/cards/elitetaurenchieftain.png",
+    "name": "Elite Tauren Chieftain",
+    "cost": "5",
+    "attack": "5",
+    "health": "5",
+    "text": "Battlecry: Give both players the power to ROCK! (with a random Power Chord card)"
+  },
+  {
+    "id": "12",
+    "img": "projects/images/cards/frostelemental.png",
+    "name": "Frost Elemental",
+    "cost": "6",
+    "attack": "5",
+    "health": "5",
+    "text": "Battlecry: Freeze a character."
+  },
+  {
+    "id": "13",
+    "img": "projects/images/cards/gelbinmekkatorque.png",
+    "name": "Gelbin Mekkatorque",
+    "cost": "6",
+    "attack": "6",
+    "health": "6",
+    "text": "Battlecry: Summon an AWESOME invention."
+  },
+  {
+    "id": "14",
+    "img": "projects/images/cards/gruul.png",
+    "name": "Gruul",
+    "cost": "8",
+    "attack": "7",
+    "health": "7",
+    "text": "At the end of each turn, gain +1/+1."
+  },
+  {
+    "id": "15",
+    "img": "projects/images/cards/guardianofkings.png",
+    "name": "Guardian of Kings",
+    "cost": "7",
+    "attack": "5",
+    "health": "6",
+    "text": "Battlecry: Restore 6 Health to your hero."
+  },
+  {
+    "id": "16",
+    "img": "projects/images/cards/illidanstormrage.png",
+    "name": "Illidan Stormrage",
+    "cost": "6",
+    "attack": "7",
+    "health": "5",
+    "text": "Whenever you play a card, summon a 2/1 Flame of Azzinoth."
+  },
+  {
+    "id": "17",
+    "img": "projects/images/cards/leeroyjenkins.png",
+    "name": "Leeroy Jenkins",
+    "cost": "4",
+    "attack": "6",
+    "health": "2",
+    "text": "Charge. Battlecry: Summon two 1/1 Whelps for your opponent."
+  },
+  {
+    "id": "18",
+    "img": "projects/images/cards/lordofthearena.png",
+    "name": "Lord of the Arena",
+    "cost": "6",
+    "attack": "6",
+    "health": "5",
+    "text": "Taunt"
+  },
+  {
+    "id": "19",
+    "img": "projects/images/cards/moltengiant.png",
+    "name": "Molten Giant",
+    "cost": "20",
+    "attack": "8",
+    "health": "8",
+    "text": "Costs (1) less for each damage your hero has taken."
+  },
+  {
+    "id": "20",
+    "img": "projects/images/cards/mountaingiant.png",
+    "name": "Mountain Giant",
+    "cost": "12",
+    "attack": "8",
+    "health": "8",
+    "text": "Costs (1) less for each other card in your hand."
+  },
+  {
+    "id": "21",
+    "img": "projects/images/cards/nozdormu.png",
+    "name": "Nozdormu",
+    "cost": "9",
+    "attack": "8",
+    "health": "8",
+    "text": "Players only have 15 seconds to take their turns."
+  },
+  {
+    "id": "22",
+    "img": "projects/images/cards/onyxia.png",
+    "name": "Onyxia",
+    "cost": "9",
+    "attack": "8",
+    "health": "8",
+    "text": "Battlecry: Summon 1/1 Whelps until your side of the battlefield is full."
+  },
+  {
+    "id": "23",
+    "img": "projects/images/cards/ragnarosthefirelord.png",
+    "name": "Ragnaros the Firelord",
+    "cost": "8",
+    "attack": "8",
+    "health": "8",
+    "text": "Can't Attack. At the end of your turn, deal 8 damage to a random enemy."
+  },
+  {
+    "id": "24",
+    "img": "projects/images/cards/ravenholdtassassin.png",
+    "name": "Ravenholdt Assassin",
+    "cost": "7",
+    "attack": "7",
+    "health": "5",
+    "text": "Stealth"
+  },
+  {
+    "id": "25",
+    "img": "projects/images/cards/seagiant.png",
+    "name": "Sea Giant",
+    "cost": "10",
+    "attack": "8",
+    "health": "8",
+    "text": "Costs (1) less for each other minion on the battlefield."
+  },
+  {
+    "id": "26",
+    "img": "projects/images/cards/stormwindchampion.png",
+    "name": "Stormwind Champion",
+    "cost": "7",
+    "attack": "6",
+    "health": "6",
+    "text": "Your other minions have +1/+1."
+  },
+  {
+    "id": "27",
+    "img": "projects/images/cards/thebeast.png",
+    "name": "The Beast",
+    "cost": "6",
+    "attack": "9",
+    "health": "7",
+    "text": "Deathrattle: Summon a 3/3 Pip Quickwit for your opponent."
+  },
+  {
+    "id": "28",
+    "img": "projects/images/cards/tirionfordring.png",
+    "name": "Tirion Fordring",
+    "cost": "8",
+    "attack": "6",
+    "health": "6",
+    "text": "Divine Shield, Taunt. Deathrattle: Equip a 5/3 Ashbringer."
+  },
+  {
+    "id": "29",
+    "img": "projects/images/cards/venturecomercenary.png",
+    "name": "Venture Co. Mercenary",
+    "cost": "5",
+    "attack": "7",
+    "health": "6",
+    "text": "Your minions cost (3) more."
+  },
+  {
+    "id": "30",
+    "img": "projects/images/cards/wargolem.png",
+    "name": "War Golem",
+    "cost": "7",
+    "attack": "7",
+    "health": "7",
+    "text": "This card has no special ability."
+  }
+]

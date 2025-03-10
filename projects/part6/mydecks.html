@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Decks - CreateMyDeck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="top-main">
+        <img
+          id="main-img"
+          src="/projects/images/logo.PNG"
+          alt="CreateMyDeck Logo"
+        />
+        <h1 id="main-header">CreateMyDeck</h1>
+        <button id="main-btn">Log In</button>
+        <div id="hamburger" class="hamburger">&#9776;</div>
+      </div>
+      <nav id="main-nav">
+        <a href="home.html">Home</a>
+        <a href="mydecks.html">My Decks</a>
+        <a href="browse.html">Browse Cards</a>
+        <a href="analysis.html">Deck Analysis</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>My Decks</h2>
+      <p>
+        Manage your decks below. You can add a new deck, edit existing ones, or
+        delete them. All changes are saved locally in your browser.
+      </p>
+
+      <!-- Form to add/edit decks -->
+      <section id="deck-form">
+        <form id="deckForm">
+          <label for="deckName">Deck Name:</label>
+          <input type="text" id="deckName" name="deckName" required />
+
+          <label for="deckDescription">Deck Description:</label>
+          <textarea
+            id="deckDescription"
+            name="deckDescription"
+            rows="3"
+            required
+          ></textarea>
+
+          <button type="submit">Add Deck</button>
+        </form>
+      </section>
+
+      <!-- List of decks -->
+      <section id="deck-list">
+        <h3>Your Decks</h3>
+        <!-- JavaScript will populate this UL with deck items -->
+        <ul id="deck-ul"></ul>
+      </section>
+    </main>
+  </body>
+</html>
