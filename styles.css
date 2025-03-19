@@ -14,7 +14,8 @@ body {
 
 #a01-03,
 #a04-06,
-#a07-09 {
+#a07-09,
+#a10-12 {
     display: block;
     margin: auto;
     width: 80%;
@@ -29,7 +30,8 @@ body {
 #a06,
 #a07,
 #a08,
-#a09 {
+#a09,
+#a10 {
     background-color: cadetblue;
 }
 
@@ -52,7 +54,8 @@ h2 {
 @media (min-width: 1100px) {
     #a01-03,
     #a04-06,
-    #a07-09 {
+    #a07-09,
+    #a10-12 {
         display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
