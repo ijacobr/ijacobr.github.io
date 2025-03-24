@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deck Analysis - CreateMyDeck</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="top-main">
+                <img
+                    id="main-img"
+                    src="/projects/images/logo.PNG"
+                    alt="CreateMyDeck Logo"
+                />
+                <h1 id="main-header">CreateMyDeck</h1>
+                <button id="main-btn">Log In</button>
+                <div id="hamburger" class="hamburger">&#9776;</div>
+            </div>
+            <nav id="main-nav">
+                <a href="home.html">Home</a>
+                <a href="mydecks.html">My Decks</a>
+                <a href="browse.html">Browse Cards</a>
+                <a href="analysis.html">Deck Analysis</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Deck Analysis</h2>
+            <p id="analysis-intro">
+                Welcome to Deck Analysis! Here, you can get a detailed breakdown
+                of your deck's performance. Review average stats, identify
+                strengths and weaknesses, and discover strategies to enhance
+                your gameplay.
+            </p>
+            <p>
+                Before you begin, here are some key metrics: Average Cost,
+                Average Attack, and Average Health. Use these insights to refine
+                your deck and tailor your playstyle.
+            </p>
+
+            <!-- Deck selection dropdown -->
+            <section>
+                <label for="analysisDeckSelect">Analyze which deck?</label>
+                <select id="analysisDeckSelect">
+                    <option value="">-- Select a deck --</option>
+                    <!-- Populated by script.js from localStorage -->
+                </select>
+                <button id="analyzeDeckBtn">Analyze Deck</button>
+            </section>
+
+            <section id="analysis-deck-list">
+                <!-- Deck cards will be listed here dynamically -->
+            </section>
+
+            <section id="analysis-metrics">
+                <div class="metric">
+                    <img
+                        src="/projects/images/mana.png"
+                        alt="Mana Icon"
+                        style="
+                            width: 50px;
+                            height: 50px;
+                            display: block;
+                            margin: 0 auto;
+                        "
+                    />
+                    <h3>Average Cost</h3>
+                    <p id="avg-cost"></p>
+                </div>
+                <div class="metric">
+                    <img
+                        src="/projects/images/attack.png"
+                        alt="Attack Icon"
+                        style="
+                            width: 50px;
+                            height: 50px;
+                            display: block;
+                            margin: 0 auto;
+                        "
+                    />
+                    <h3>Average Attack</h3>
+                    <p id="avg-attack"></p>
+                </div>
+                <div class="metric">
+                    <img
+                        src="/projects/images/health.png"
+                        alt="Health Icon"
+                        style="
+                            width: 50px;
+                            height: 50px;
+                            display: block;
+                            margin: 0 auto;
+                        "
+                    />
+                    <h3>Average Health</h3>
+                    <p id="avg-health"></p>
+                </div>
+            </section>
+
+            <section id="analysis-description">
+                <p id="deck-description"></p>
+            </section>
+        </main>
+    </body>
+</html>

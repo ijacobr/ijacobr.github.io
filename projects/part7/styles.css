@@ -1,0 +1,506 @@
+/* ===================================================
+   Global Styles (applies to all pages)
+   =================================================== */
+   * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #463C2D;
+    font-family: 'Roboto', sans-serif;
+    color: #26AEE7;
+    text-align: center;
+  }
+  
+  a {
+    color: #FFD700; /* Brighter, more visible color */
+    text-decoration: none;
+  }
+  
+  /* ===================================================
+     Header & Navigation (common to all pages)
+     =================================================== */
+  header {
+    background-color: #2C2A27;
+    padding: 10px;
+  }
+  
+  /* Use flex to create three columns: left (logo), center (title), right (login) */
+  #top-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  #main-img {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Absolutely center the header text in the container */
+  #main-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* The login button now uses auto width, centered text, and is pushed to the right */
+  #main-btn {
+    margin-left: auto;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  #main-nav {
+    margin-top: 10px;
+  }
+  
+  #main-nav a {
+    text-decoration: none;
+    color: #FFD700;
+    padding: 10px 15px;
+  }
+  
+  /* ===================================================
+     Main Container
+     =================================================== */
+  main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* ===================================================
+     Responsive Navigation and Mobile Adjustments
+     =================================================== */
+  @media (max-width: 768px) {
+    #main-nav {
+      display: none;
+      flex-direction: column;
+    }
+    .hamburger {
+      display: block;
+    }
+    header {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ===================================================
+     Common Components (used on multiple pages)
+     =================================================== */
+  /* Grid layout for card galleries */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .card-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .add-to-deck {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    cursor: pointer;
+  }
+  
+  /* Sorting button styles */
+  #card-sort {
+    margin: 20px 0;
+  }
+  
+  .sort-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sort-button:hover,
+  .sort-button.active {
+    background-color: #FFD700;
+    color: #463C2D;
+  }
+  
+  /* ===================================================
+     Home Page Specific Styles (home.html)
+     =================================================== */
+  /* Hero Section */
+  #hero {
+    margin: 20px 0;
+  }
+  
+  /* Features Section */
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .feature {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #26AEE7;
+    border-radius: 5px;
+  }
+  
+  /* Blog Updates */
+  #blog-updates {
+    padding: 20px;
+  }
+  
+  /* ===================================================
+     My Decks Page Specific Styles (mydecks.html)
+     =================================================== */
+  #deck-form {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  #deck-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  #deck-form input,
+  #deck-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #deck-form button {
+    padding: 10px 15px;
+  }
+  
+  /* Remove bullet points from the Your Decks list */
+  #deck-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  /* Additional My Decks / Deck Cards styles */
+  #dropdown {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #dropdown-list {
+    padding: 5px;
+    width: 150px;
+  }
+  
+  #deck-cards {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 820px) {
+    #deck-cards {
+      margin-top: 20px;
+    }
+    #row1 {
+      display: flex;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+      flex: 1;
+    }
+    #row2 {
+      display: flex;
+    }
+    #pic6, #pic7, #pic8, #pic9, #pic10 {
+      flex: 1;
+    }
+  }
+  
+  /* ===================================================
+     Browse Cards Page Specific Styles (browse.html)
+     =================================================== */
+  #deck-dropdown {
+    margin: 20px 0;
+  }
+  
+  #filters {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #dropdown {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #dropdown-list {
+    padding: 5px;
+    width: 150px;
+  }
+  
+  /* Overriding deck-cards styles for card gallery display */
+  #deck-cards {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 820px) {
+    #name {
+      display: flex;
+    }
+    #cost, #attack, #health {
+      flex: 1;
+    }
+    #row1 {
+      display: flex;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+      flex: 1;
+      margin: 10px;
+    }
+    #row2 {
+      display: flex;
+    }
+    #pic6, #pic7, #pic8, #pic9, #pic10 {
+      flex: 1;
+      margin: 10px;
+    }
+    #row3 {
+      display: flex;
+    }
+    #pic11, #pic12, #pic13, #pic14, #pic15 {
+      flex: 1;
+      margin: 10px;
+    }
+    #buttons3 {
+      display: flex;
+    }
+    #btn11, #btn12, #btn13, #btn14, #btn15 {
+      flex: 1;
+    }
+    #row4 {
+      display: flex;
+    }
+    #pic16, #pic17, #pic18, #pic19, #pic20 {
+      flex: 1;
+      margin: 10px;
+    }
+  }
+  
+  /* ===================================================
+     Deck Analysis Page Specific Styles (analysis.html)
+     =================================================== */
+  /* Flex layout for analysis metrics to display icons and texts in a row */
+  #analysis-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+  }
+  
+  .metric {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  /* Additional analysis page styles */
+  #name,
+  #amount {
+    text-align: center;
+  }
+  
+  #dropdown {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #dropdown-list {
+    padding: 5px;
+    width: 150px;
+  }
+  
+  #descriptions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #cost,
+  #attack,
+  #health {
+    flex: 1;
+  }
+  
+  @media (min-width: 820px) {
+    #name,
+    #amount {
+      display: flex;
+    }
+    #name1, #name2, #name3,
+    #a1, #a2, #a3 {
+      flex: 1;
+    }
+    #row1 {
+      display: flex;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+      flex: 1;
+      margin: 10px;
+    }
+    #row2 {
+      display: flex;
+    }
+    #pic6, #pic7, #pic8, #pic9, #pic10 {
+      flex: 1;
+      margin: 10px;
+    }
+  }
+  
+  /* ===================================================
+     About Us Page Specific Styles (about.html)
+     =================================================== */
+  #header {
+    text-align: center;
+  }
+  
+  #content-text {
+    border: 1px solid #26AEE7;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  /* ===================================================
+     Card Preview Page Specific Styles (preview.html)
+     =================================================== */
+  #card-preview {
+    padding: 20px;
+  }
+  
+  #card-preview img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* ===================================================
+     Contact Section Styles (Contact Us)
+     =================================================== */
+  #contact {
+    border: 1px solid #26AEE7;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: transparent;
+    color: inherit;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .form-container {
+    flex: 1 1 300px;
+    max-width: 500px;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #FFD700;
+    border-radius: 3px;
+    background: #fff;
+    color: #463C2D;
+  }
+  
+  /* Updated Button: blue background (#26AEE7) with white text */
+  .form-container button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #26AEE7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .iframe-container {
+    flex: 1 1 300px;
+    max-width: 500px;
+  }
+  
+  .iframe-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  @media (min-width: 820px) {
+    .contact-container {
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width: 819px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
+  

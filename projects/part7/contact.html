@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Me - CreateMyDeck</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Include EmailJS library from CDN -->
+        <script
+            type="text/javascript"
+            src="https://cdn.emailjs.com/dist/email.min.js"
+        ></script>
+    </head>
+    <body>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="subject">Subject:</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        />
+
+                        <label for="message">Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                        ></textarea>
+
+                        <button type="submit">Send Message</button>
+                        <span id="form-status"></span>
+                    </form>
+                </div>
+                <!-- IFrame Embed (Google Map Example) -->
+                <div class="iframe-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509959!2d-122.42067968468159!3d37.77902697975706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b8b62e3%3A0x8c9e1b0a63a927a2!2sCity%20Hall!5e0!3m2!1sen!2sus!4v1592915319534!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+        <script src="script.js" defer></script>
+    </body>
+</html>

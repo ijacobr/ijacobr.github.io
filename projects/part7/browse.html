@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Browse Cards - CreateMyDeck</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="top-main">
+                <img
+                    id="main-img"
+                    src="/projects/images/logo.PNG"
+                    alt="CreateMyDeck Logo"
+                />
+                <h1 id="main-header">CreateMyDeck</h1>
+                <button id="main-btn">Log In</button>
+                <div id="hamburger" class="hamburger">&#9776;</div>
+            </div>
+            <nav id="main-nav">
+                <a href="home.html">Home</a>
+                <a href="mydecks.html">My Decks</a>
+                <a href="browse.html">Browse Cards</a>
+                <a href="analysis.html">Deck Analysis</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Browse Cards</h2>
+            <p>
+                Select a deck to add cards to, or simply view the collection.
+                Click any of the sort buttons below to view cards from highest
+                to lowest by cost, attack, or health. Then click "Add" to place
+                a card into your chosen deck.
+            </p>
+
+            <!-- Deck selection dropdown -->
+            <section id="deck-dropdown">
+                <label for="deckSelect">Add cards to:</label>
+                <select id="deckSelect">
+                    <option value="">-- Select a deck --</option>
+                    <!-- Populated by script.js -->
+                </select>
+            </section>
+
+            <!-- Sorting Section -->
+            <section id="card-sort">
+                <button class="sort-button" data-sort="cost">
+                    Sort by Cost
+                </button>
+                <button class="sort-button" data-sort="attack">
+                    Sort by Attack
+                </button>
+                <button class="sort-button" data-sort="health">
+                    Sort by Health
+                </button>
+            </section>
+
+            <!-- Card Gallery (grid layout) -->
+            <section id="card-gallery" class="grid">
+                <!-- Cards will be loaded dynamically from the JSON file -->
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Card Preview - CreateMyDeck</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <div id="top-main">
+                <img
+                    id="main-img"
+                    src="/projects/images/logo.PNG"
+                    alt="CreateMyDeck Logo"
+                />
+                <h1 id="main-header">CreateMyDeck</h1>
+                <button id="main-btn">Log In</button>
+                <div id="hamburger" class="hamburger">&#9776;</div>
+            </div>
+            <nav id="main-nav">
+                <a href="home.html">Home</a>
+                <a href="mydecks.html">My Decks</a>
+                <a href="browse.html">Browse Cards</a>
+                <a href="analysis.html">Deck Analysis</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Card Preview</h2>
+            <div id="card-preview">
+                <img
+                    id="card-image"
+                    src="/projects/images/cards/aldorpeacekeeper.png"
+                    alt="Card Preview"
+                />
+                <div id="card-details">
+                    <h3 id="card-name">Card Name</h3>
+                    <p id="card-description">Card ability goes here.</p>
+                    <p id="card-stats">Cost: -, Attack: -, Health: -</p>
+                </div>
+            </div>
+            <a href="browse.html" class="back-link">Back to Browse</a>
+        </main>
+
+        <script>
+            // Helper function to normalize strings
+            function normalize(str) {
+                return str.toLowerCase().replace(/[^a-z0-9]/g, "");
+            }
+
+            // Load card data from JSON file (located in /projects/json/cards.json)
+            fetch("/projects/json/cards.json")
+                .then((response) => response.json())
+                .then((cards) => {
+                    const params = new URLSearchParams(window.location.search);
+                    let cardKey = params.get("card");
+                    if (!cardKey) {
+                        document.getElementById("card-name").textContent =
+                            "No card selected";
+                        document.getElementById(
+                            "card-description"
+                        ).textContent =
+                            "Please select a card from the Browse page.";
+                        document.getElementById("card-stats").textContent = "";
+                        return;
+                    }
+                    cardKey = normalize(cardKey);
+                    const card = cards.find(
+                        (c) => normalize(c.name) === cardKey
+                    );
+                    const cardImage = document.getElementById("card-image");
+                    const cardName = document.getElementById("card-name");
+                    const cardDesc =
+                        document.getElementById("card-description");
+                    const cardStats = document.getElementById("card-stats");
+                    if (card) {
+                        cardName.textContent = card.name;
+                        cardDesc.textContent = card.text;
+                        cardStats.textContent = `Cost: ${card.cost}, Attack: ${card.attack}, Health: ${card.health}`;
+                        cardImage.src = `/${card.img}`;
+                        cardImage.alt = card.name;
+                    } else {
+                        cardName.textContent = "Unknown Card";
+                        cardDesc.textContent = "No description available.";
+                        cardStats.textContent = "Stats not available.";
+                    }
+                })
+                .catch((err) => console.error("Error loading card data:", err));
+        </script>
+    </body>
+</html>

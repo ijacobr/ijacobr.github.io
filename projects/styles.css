@@ -13,7 +13,8 @@ body {
 }
 
 #a01-03,
-#a04-06 {
+#a04-06,
+#a07-09 {
     display: block;
     margin: auto;
     width: 80%;
@@ -24,7 +25,8 @@ body {
 #a03,
 #a04,
 #a05,
-#a06 {
+#a06,
+#a07 {
     background-color: cadetblue;
 }
 
@@ -45,13 +47,7 @@ h2 {
 }
 
 @media (min-width: 900px) {
-    #a01-03 {
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        padding: 10px;
-    }
-    #a04-06 {
+    #a01-03, #a04-06, #a07-09 {
         display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
