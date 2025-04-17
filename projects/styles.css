@@ -1,80 +1,80 @@
 /* — Global — */
 body {
     background: dimgray;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     margin: 0;
     color: black;
-}
-
-img {
+  }
+  
+  img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-/* — Header — */
-.site-header {
+  }
+  
+  /* — Header — */
+  .site-header {
     text-align: center;
     padding: 1rem 0;
-}
-
-.site-header h1 {
+  }
+  
+  .site-header h1 {
     color: yellow;
     margin: 0;
-}
-
-.site-header h2 {
+  }
+  
+  .site-header h2 {
     color: lightskyblue;
     margin: 0.25rem 0;
-}
-
-.home-link {
+  }
+  
+  .home-link {
     display: inline-block;
     margin-top: 0.5rem;
     color: maroon;
     text-decoration: none;
     font-weight: bold;
-}
-
-/* — Assignments Section — */
-.assignments {
+  }
+  
+  /* — Assignments Section — */
+  .assignments {
     width: 80%;
     margin: 2rem auto;
     text-align: center;
-}
-
-.assignments h2 {
+  }
+  
+  .assignments h2 {
     color: lightskyblue;
     margin-bottom: 1rem;
-}
-
-/* — Responsive Grid — */
-.assignments-grid {
+  }
+  
+  /* — Responsive Grid — */
+  .assignments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
-}
-
-/* — Project Cards — */
-.project {
+  }
+  
+  /* — Project Cards — */
+  .project {
     background: cadetblue;
     padding: 1rem;
     border-radius: 8px;
-}
-
-.project h3 {
+  }
+  
+  .project h3 {
     margin-top: 0;
-}
-
-.project p {
+  }
+  
+  .project p {
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 0.5rem 0 0;
-}
-
-.project p a {
+  }
+  
+  .project p a {
     color: inherit;
     text-decoration: underline;
-}
+  }
+  

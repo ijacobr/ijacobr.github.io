@@ -1,64 +1,79 @@
-/* Structure */
+/* — Global — */
 body {
     background: dimgray;
+    margin: 0;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
+    color: black;
 }
 
-#headers {
-    padding: 20px;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-}
-
-#a01-03,
-#a04-06,
-#a07-09,
-#a10-12 {
+img {
     display: block;
-    margin: auto;
-    width: 80%;
-    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
-#a01,
-#a02,
-#a03,
-#a04,
-#a05,
-#a06,
-#a07,
-#a08,
-#a09,
-#a10 {
-    background-color: cadetblue;
+/* — Header — */
+.site-header {
+    text-align: center;
+    padding: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
-#project {
-    margin: auto;
-    width: 80%;
-    text-align: center;
+.site-header h1 {
+    color: yellow;
+    margin: 0;
+}
+
+.site-header h2 {
+    color: lightskyblue;
+    margin: 0.25rem 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    text-decoration: none;
+}
+
+.project-link h3 {
+    margin: 0;
     color: maroon;
 }
 
-/* Typography */
-h1 {
-    color: yellow;
+/* — Assignments Grid — */
+.assignments {
+    width: 80%;
+    margin: 2rem auto;
 }
 
-h2 {
-    color: lightskyblue;
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    text-align: center;
 }
 
-@media (min-width: 1100px) {
-    #a01-03,
-    #a04-06,
-    #a07-09,
-    #a10-12 {
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        padding: 10px;
-    }
+/* — Assignment Cards — */
+.assignment {
+    background: cadetblue;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.assignment h3 {
+    margin-top: 0;
+}
+
+.assignment p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.assignment p a {
+    color: inherit;
+    text-decoration: underline;
 }
