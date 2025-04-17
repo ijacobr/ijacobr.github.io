@@ -1,125 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>index - Jacob Russell</title>
+        <meta charset="utf-8" />
+        <title>CSCE 242 – Web Applications | Jacob Russell</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div id="headers">
-            <h1>CSCE 242 - Web Applications</h1>
-            <h2 id="name">Jacob Russell</h2>
-            <h2 id="assign">Assignments</h2>
-            <a id="home-page" href="../index.html"><h3>Home Page</h3></a>
-        </div>
+        <header class="site-header">
+            <h1>CSCE 242 – Web Applications</h1>
+            <h2>Jacob Russell</h2>
+            <a class="home-link" href="../index.html">Home Page</a>
+        </header>
 
-        <main id="main">
-            <div id="a01-03">
-                <section id="a01">
-                    <h3>Project01 - PDF</h3>
-                    <a href="part1/CreateMyDeck.PDF"
-                        ><img src="images/createmydeck.PNG" alt="pdf"
-                    /></a>
+        <main class="assignments">
+            <h2>Assignments</h2>
+            <div class="assignments-grid">
+                <section class="project">
+                    <h3>Project 01 – PDF</h3>
+                    <a href="part1/CreateMyDeck.PDF">
+                        <img
+                            src="images/createmydeck.PNG"
+                            alt="Project 01 PDF"
+                        />
+                    </a>
                     <p>
                         A PDF file giving a description of the project along
-                        with the pages it will have
+                        with the pages it will have.
                     </p>
                 </section>
-                <section id="a02">
-                    <h3>Project02 - Wireframe</h3>
-                    <a href="part2/index.html"
-                        ><img src="images/wireframe.PNG" alt="wireframe"
-                    /></a>
+
+                <section class="project">
+                    <h3>Project 02 – Wireframe</h3>
+                    <a href="part2/index.html">
+                        <img
+                            src="images/wireframe.PNG"
+                            alt="Project 02 Wireframe"
+                        />
+                    </a>
                     <p>
                         A wireframe of the project that includes the layout and
                         structure of the web pages.
                     </p>
                 </section>
-                <section id="a03">
-                    <h3>Project03 - HTML and CSS</h3>
-                    <a href="part3/home.html"
-                        ><img src="images/homepage.PNG" alt="homepage"
-                    /></a>
-                    <p>The html and css of our project website.</p>
-                </section>
-            </div>
 
-            <div id="a04-06">
-                <section id="a04">
-                    <h3>Project04 - Colors, Pictures, and Text</h3>
-                    <a href="part4/home.html"
-                        ><img src="images/homepage-color.PNG"
-                    /></a>
+                <section class="project">
+                    <h3>Project 03 – HTML and CSS</h3>
+                    <a href="part3/home.html">
+                        <img
+                            src="images/homepage.PNG"
+                            alt="Project 03 Homepage"
+                        />
+                    </a>
+                    <p>The HTML and CSS of our project website.</p>
+                </section>
+
+                <section class="project">
+                    <h3>Project 04 – Colors, Pictures, and Text</h3>
+                    <a href="part4/home.html">
+                        <img
+                            src="images/homepage-color.PNG"
+                            alt="Project 04 Colored Homepage"
+                        />
+                    </a>
                     <p>
-                        The html and css of our project website with colors,
+                        The HTML and CSS of our project website with colors,
                         pictures, and text.
                     </p>
                 </section>
-                <section id="a05">
-                    <h3>Project05 - Improve Your Website</h3>
-                    <a href="part5/home.html"
-                        ><img src="images/homepage-final.PNG"
-                    /></a>
-                    <p>Finializing the html and css of our website.</p>
+
+                <section class="project">
+                    <h3>Project 05 – Improve Your Website</h3>
+                    <a href="part5/home.html">
+                        <img
+                            src="images/homepage-final.PNG"
+                            alt="Project 05 Final Homepage"
+                        />
+                    </a>
+                    <p>Finalizing the HTML and CSS of our website.</p>
                 </section>
-                <section id="a06">
-                    <h3>Project06 - JSON File Parsing</h3>
-                    <a href="part6/home.html"
-                        ><img src="images/part6img.PNG"
-                    /></a>
+
+                <section class="project">
+                    <h3>Project 06 – JSON File Parsing</h3>
+                    <a href="part6/home.html">
+                        <img
+                            src="images/part6img.PNG"
+                            alt="Project 06 JSON Parsing"
+                        />
+                    </a>
                     <p>
                         Creating JSON file parsing to hold info about the cards
                         in our project.
                     </p>
                 </section>
-            </div>
 
-            <div id="a07-09">
-                <section id="a07">
-                    <h3>Project07 - Contact Form and JavaScript</h3>
-                    <a href="part7/home.html"
-                        ><img src="images/part7img.PNG"
-                    /></a>
+                <section class="project">
+                    <h3>Project 07 – Contact Form and JavaScript</h3>
+                    <a href="part7/home.html">
+                        <img
+                            src="images/part7img.PNG"
+                            alt="Project 07 Contact Form"
+                        />
+                    </a>
                     <p>
                         Creating a contact form and using JavaScript to send an
                         email.
                     </p>
                 </section>
-                <section id="a08">
-                    <h3>Project08 - React Site Components and Pages</h3>
-                    <a href="https://ijacobr.github.io/CreateMyDeck/"
-                        ><img src="images/part8img.PNG"
-                    /></a>
+
+                <section class="project">
+                    <h3>Project 08 – React Site Components and Pages</h3>
+                    <a href="https://ijacobr.github.io/CreateMyDeck/">
+                        <img
+                            src="images/part8img.PNG"
+                            alt="Project 08 React Site"
+                        />
+                    </a>
                     <p>
                         <a href="https://github.com/ijacobr/CreateMyDeck"
-                            >Github Repo</a
+                            >GitHub Repo</a
                         >
+                        ·
                         <a href="https://ijacobr.github.io/CreateMyDeck/"
-                            >Main Site</a
-                        >
-
-                        Converting Project site into a React site.
+                            >Main Site</a
+                        ><br />
+                        Converting the project site into a React application.
                     </p>
                 </section>
-                <section id="a09">
-                    <h3>Project09 - More JS and Server Get Request</h3>
-                    <a href="https://ijacobr.github.io/CreateMyDeck/"
-                        ><img src="images/part9img.PNG"
-                    /></a>
+
+                <section class="project">
+                    <h3>Project 09 – More JS and Server GET Request</h3>
+                    <a href="https://ijacobr.github.io/CreateMyDeck/">
+                        <img
+                            src="images/part9img.PNG"
+                            alt="Project 09 Server GET"
+                        />
+                    </a>
                     <p>
                         <a href="https://github.com/ijacobr/CreateMyDeck"
-                            >Github Repo</a
+                            >GitHub Repo</a
                         >
+                        ·
                         <a href="https://ijacobr.github.io/CreateMyDeck/"
-                            >Main Site</a
+                            >Main Site</a
                         >
+                        ·
                         <a href="https://github.com/ijacobr/createmydeck_server"
-                            >Server Side Github</a
+                            >Server Repo</a
                         >
+                        ·
                         <a href="https://createmydeck-server.onrender.com/"
-                            >Render Site</a
-                        >
-
+                            >Live Server</a
+                        ><br />
                         Getting the server side of the project up and running.
+                    </p>
+                </section>
+
+                <section class="project">
+                    <h3>Project 10 – POST Request</h3>
+                    <a href="https://ijacobr.github.io/CreateMyDeck/">
+                        <img src="images/part10img.PNG" alt="Project 10 POST" />
+                    </a>
+                    <p>
+                        <a href="https://github.com/ijacobr/CreateMyDeck"
+                            >GitHub Repo</a
+                        >
+                        ·
+                        <a href="https://ijacobr.github.io/CreateMyDeck/"
+                            >Main Site</a
+                        >
+                        ·
+                        <a href="https://github.com/ijacobr/createmydeck_server"
+                            >Server Repo</a
+                        >
+                        ·
+                        <a href="https://createmydeck-server.onrender.com/"
+                            >Live Server</a
+                        ><br />
+                        Creating a POST request to send data to the server and
+                        display it.
+                    </p>
+                </section>
+
+                <section class="project">
+                    <h3>Project 11 – Edit and Delete Requests</h3>
+                    <a href="https://ijacobr.github.io/CreateMyDeck/">
+                        <img
+                            src="images/part11img.PNG"
+                            alt="Project 11 Edit/Delete"
+                        />
+                    </a>
+                    <p>
+                        <a href="https://github.com/ijacobr/CreateMyDeck"
+                            >GitHub Repo</a
+                        >
+                        ·
+                        <a href="https://ijacobr.github.io/CreateMyDeck/"
+                            >Main Site</a
+                        >
+                        ·
+                        <a href="https://github.com/ijacobr/createmydeck_server"
+                            >Server Repo</a
+                        >
+                        ·
+                        <a href="https://createmydeck-server.onrender.com/"
+                            >Live Server</a
+                        >
+                    </p>
+                </section>
+
+                <section class="project">
+                    <h3>Project 12</h3>
+                    <a href="https://ijacobr.github.io/CreateMyDeck/">
+                        <img src="images/part12img.PNG" alt="Project 12" />
+                    </a>
+                    <p>
+                        <a href="https://github.com/ijacobr/CreateMyDeck"
+                            >GitHub Repo</a
+                        >
+                        ·
+                        <a href="https://ijacobr.github.io/CreateMyDeck/"
+                            >Main Site</a
+                        >
+                        ·
+                        <a href="https://github.com/ijacobr/createmydeck_server"
+                            >Server Repo</a
+                        >
+                        ·
+                        <a href="https://createmydeck-server.onrender.com/"
+                            >Live Server</a
+                        >
                     </p>
                 </section>
             </div>
